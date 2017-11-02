@@ -1,0 +1,24 @@
+Task #,Corpus,LINGUISTIC FILES,PREPROCESSING,FEATURING,SELECTION,LINKING,SCORING,OUT FILE,RESULTS,GOLD STANDARD (ITTB)
+1,,"lemma-mapping.list
+lemma.syno
+no Babelnet look-up","synrepl
+lowercase
+lemmatisation",Wordbased,"localglobal.LocalMaxFeatureFrequencySelectorImpl
+FD 0.8","Interlinking
+no MW",FR 0.5,aquinas-task-1.out,FAILED,
+2,scg-deTrinitate.txt,"lemma-mapping.list
+lemma.syno
+no Babelnet look-up","synrepl
+lowercase
+lemmatisation",Wordbased,"localglobal.LocalMaxFeatureFrequencySelectorImpl
+FD 0.8","Interlinking
+no MW",FR 0.5,aquinas-task-2.out,0,QR; 0
+3,scg-philosophiaeConsolationis.txt,"lemma-mapping.list
+lemma.syno
+no Babelnet look-up","synrepl
+lowercase
+lemmatisation",Wordbased,"localglobal.LocalMaxFeatureFrequencySelectorImpl
+FD 0.8","Interlinking
+no MW",FR 0.5,aquinas-task-3.out,0,QR; 0
+4,scg-vulgata-VT.txt,,,,,,,,,
+5,scg-vulgata-NT.txt,,,,,,,,,
