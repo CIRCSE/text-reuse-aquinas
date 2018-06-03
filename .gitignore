@@ -28,3 +28,11 @@ ShowSpecialChars\.class
 ShowSpecialChars\.java
 
 symbols\.txt
+
+01-corpus/downloaded/
+
+gnuplot/
+
+graphml/
+
+corpus-statistics/
