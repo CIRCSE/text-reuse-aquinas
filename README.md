@@ -1,11 +1,8 @@
 # Text reuse in Thomas Aquinas
-This research project seeks to automatically detect text reuse (verbatim and non-verbatim) in the works of Thomas Aquinas (Latin). 
+This research seeks to automatically detect text reuse (verbatim and paraphrase) between the *Summa contra Gentiles* of Thomas Aquinas and a number of other works. 
 
-## Goal of the project
-The objective of the project is to run TRACER, a text reuse detection machine, on the corpus of Thomas Aquinas (*Corpus Thomisticum*) and to compare the automatically-detected reuses against the manually-annotated quotations present in the *Index Thomisticus Treebank (ITTB)*. False positives produced by TRACER will be of particular interest as these could contain previously unnoticed text reuse.
-
-
-For more information about the project, visit the [Wiki](https://github.com/CIRCSE/text-reuse-aquinas/wiki) of this repository.
+The detection software used is [TRACER](http://www.etrap.eu/research/tracer). The automatically-detected reuses are evaluated against the manually-annotated (explicit) quotations in the *Index Thomisticus*, which is used as a gold standard. 
+The objective is to create an "Index fontium computatus" containing true positives, false positives as well as false negatives to better understand the limitations of retrieval methods and linguistic resources for Latin.
 
 
 
