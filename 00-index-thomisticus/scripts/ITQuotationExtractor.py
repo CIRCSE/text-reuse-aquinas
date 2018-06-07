@@ -15,6 +15,7 @@ if __name__ == '__main__':
     RS = RL = SL = 0
     RSL = 0
     ANYofThem = 0
+    noneOfThem = 0
     
     QRanyBool = False
     QSanyBool = False
@@ -58,6 +59,11 @@ if __name__ == '__main__':
                     # any
                     if QRanyBool or QSanyBool or QLanyBool:
                         ANYofThem += 1
+                        
+                if len(text) > 0:
+                    if not QRanyBool and not QSanyBool and not QLanyBool:
+                        noneOfThem += 1
+                        
                     
                 # saving ID only for mow and resetting parameters    
                 text = id_ + "\t"
@@ -95,7 +101,8 @@ if __name__ == '__main__':
                     
                    
     out.close() 
-
+    
+    print "No. of sentences containing none: " + str(noneOfThem) + "\n"
     print "No. of sentences containing any: " + str(ANYofThem) + "\n"
     print "No. of sentences containing all of them: " + str(RSL) + "\n"
     
