@@ -1,2 +1,8 @@
 .pydevproject
 .project
+00-index-thomisticus/scripts/in/*
+00-index-thomisticus/scripts/out/*
+00-index-thomisticus/scripts/tracer_data/*
+00-index-thomisticus/scripts/matches/*
+
+

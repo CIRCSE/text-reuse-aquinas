@@ -8,7 +8,7 @@ if __name__ == '__main__':
 
     # read the data directory
     fils = sorted(os.listdir("in"), key= lambda s: int(s.split(".")[2]))
-    out = open("extracted-quotations.csv", 'w')
+    out = open("out/extracted-quotations.csv", 'w')
     #print fils
     
     QR = QS = QL = 0
@@ -88,7 +88,7 @@ if __name__ == '__main__':
             
             elif line.startswith('<d>'):
                 det = line.split('<l>')[0].split('<d>')[1]
-                text = text[:-1]
+                #text = text[:-1]
                 text = text + det + "\t"
                 
                     
