@@ -36,3 +36,15 @@ scripts/ShowSpecialChars\.java
 00-index-thomisticus/index-thomisticus-treebank-SCG-INCOMPLETA\.zip
 
 00-index-thomisticus/13-03-2017_all_resources_all_formats\.zip
+
+corpus-lemlat/
+
+00-index-thomisticus/Treebank\.csts
+
+00-index-thomisticus/\.~lock\.ITTB-SCG-clean\.txt#
+
+00-index-thomisticus/\.~lock\.ITTB-SCG-mod\.csv#
+
+01-corpus/downloaded/
+
+04-corpus-tracer/
