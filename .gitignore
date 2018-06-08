@@ -7,18 +7,32 @@
 
 
 
-98-graphml/
+sunburst\.xlsx
+
+lwn\.syno
 
 99-bibliography/
 
 97-gnuplot/
 
-00-index-thomisticus/index-thomisticus-treebank-SCG-INCOMPLETA\.zip
+98-graphml/
 
 lemlat-3-instructions\.txt
 
-scripts/
+scripts/importDatabase\.sh
+
+scripts/ShowSpecialChars\.class
+
+scripts/ShowSpecialChars\.java
+
+00-index-thomisticus/scripts/extracted-quotations\.csv
+
+00-index-thomisticus/scripts/extracted-quotations_clean\.csv
+
+00-index-thomisticus/scripts/extracted-quotations_no-punct\.csv
+
+00-index-thomisticus/tags_1\.pdf
+
+00-index-thomisticus/index-thomisticus-treebank-SCG-INCOMPLETA\.zip
 
 00-index-thomisticus/13-03-2017_all_resources_all_formats\.zip
-
-sunburst\.xlsx
