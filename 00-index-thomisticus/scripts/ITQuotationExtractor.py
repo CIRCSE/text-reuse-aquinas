@@ -8,7 +8,7 @@ if __name__ == '__main__':
 
     # read the data directory
     fils = sorted(os.listdir("in"), key= lambda s: int(s.split(".")[2]))
-    out = open("out/extracted-quotations.csv", 'w')
+    out = open("extracted-quotations.csv", 'w')
     #print fils
     
     QR = QS = QL = 0
