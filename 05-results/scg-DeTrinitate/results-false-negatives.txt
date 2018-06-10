@@ -7,6 +7,6 @@ Linking minOverlap: 5 | Containment measure similarity score: 0.4 | Selection Fe
 1000043 quia vero non omnis veritatis manifestandae modus est idem ; disciplinati autem hominis est tantum de unoquoque fidem capere tentare , quantum natura rei permittit , ut a philosopho , optime dictum boetius introducit , necesse est prius ostendere quis modus sit possibilis ad veritatem propositam manifestandam . 
  
  
-In .link file: NO 
-In .score file: NO 
+In .link file:
+In .score file: 
 REASON: 
