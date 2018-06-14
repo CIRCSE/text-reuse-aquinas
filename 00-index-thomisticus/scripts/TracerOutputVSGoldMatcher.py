@@ -3,6 +3,7 @@ Created on 06.06.2018
 
 @author: mm
 '''
+import os.path as path
 import os
 
 
@@ -38,6 +39,7 @@ def find_matches(sent):
 if __name__ == '__main__':
     
     topwords = 500
+    fw_source = "wordlist" # put 0 if you dont wnat to use a stop word list and instead the most frequent words from the gold corpus
     gold_dict = {}
     fw = {}
     gold_vocab = {}
@@ -51,34 +53,49 @@ if __name__ == '__main__':
     
     # read the gold data into a dictionary
 
+        
     for line in gold_data:
         line_arr = line.split("\t") 
         # save the gold data to the gold dictionary
         gold_dict[line_arr[0]] = line_arr[1:]
+          
+        if fw_source == 0:  
+            # prepare the gold vocabulary
+            tokens = line_arr[1:]
+            for token in tokens:
+                if "(" in token and ")" in token:
+                    word = token[:-4]
+                    freq = 0
+                    try:
+                        freq = gold_vocab[word]
+                        gold_vocab[word] = freq+1
+                    except:
+                        gold_vocab[word] = 1
+                 
+                          
+            # extract the most frequent words from the gold vocabulary, therefore, sort it first
+            sorted_vocab = sorted(gold_vocab.items(), key=lambda x: x[1])   
+            gold_vocab = reversed(sorted_vocab)
         
-        # prepare the gold vocabulary
-        tokens = line_arr[1:]
-        for token in tokens:
-            if "(" in token and ")" in token:
-                word = token[:-4]
-                freq = 0
-                try:
-                    freq = gold_vocab[word]
-                    gold_vocab[word] = freq+1
-                except:
-                    gold_vocab[word] = 1
-             
-    # get the most frequent words from the vocab
-    sorted_vocab = sorted(gold_vocab.items(), key=lambda x: x[1])   
-    gold_vocab = reversed(sorted_vocab)
+            # extract here
+            c = 0
+            for k in gold_vocab:
+                c += 1
+                if c > topwords:
+                    break
+                fw[k[0]] = 0
     
-    c = 0
-    for k in gold_vocab:
-        c += 1
-        if c > topwords:
-            break
-        fw[k[0]] = 0
+    
+    # this is the option with the stop word list
+    if fw_source == "wordlist":
 
+        filename = path.abspath(path.join(__file__ ,"../../../07-tracer/latin.txt"))
+        #print filename
+        wordlist_file = open(r""+ filename)
+        words = wordlist_file.read().splitlines() 
+        
+        for ws in words:
+            fw[ws] = 0
 
 
     # tracer directory reading
