@@ -65,18 +65,18 @@ Average tagging accuracy: **93.72%**
 
 ### Summa contra Gentiles vs. De Divinatione
 
-* Total number of sentences (_ScG_ and _De Divinatione_ combined):
-* Total number of TRACER results:
-* Total number of TRACER results without duplicates:
-* Reuses to find: 
+* Total number of sentences (_ScG_ and _De Divinatione_ combined): 20,820
+* Total number of TRACER results: 1,585,719
+* Total number of TRACER results without duplicates: 
+* Reuses to find: 1
 
 No results. 
 
 
 ### Summa contra Gentiles vs. Metaphysica
 
-* Total number of sentences (_ScG_ and _De Divinatione_ combined):
-* Total number of TRACER results:
+* Total number of sentences (_ScG_ and _De Divinatione_ combined): 22,550
+* Total number of TRACER results: 
 * Total number of TRACER results without duplicates:
 * Reuses to find: 
 
