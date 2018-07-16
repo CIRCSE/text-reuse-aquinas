@@ -5,8 +5,6 @@
 00-index-thomisticus/scripts/tracer_data/*
 00-index-thomisticus/scripts/matches/*
 
-
-
 sunburst\.xlsx
 
 lwn\.syno
@@ -54,7 +52,5 @@ BabelNetExtract/
 05-results/scg-metaphysica\.zip
 
 05-results/scg-deDeoSocratis\.zip
-
-05-results/scg-DeTrinitate\.zip
 
 05-results/scg-philosophiaeConsolationis\.zip
