@@ -84,7 +84,7 @@ No results.
 * FN: 78
 
 
-**Precision** = 97/(97+502,858) = 0,000192 | **Recall** = 2/(78+19) = 0,02 | **F1 score** = 2 · (P·R)/(P+R) = 3.8 · 10<sup>-4</sup>
+**Precision** = 97/(97+502,858) = 0,000192 | **Recall** = 2/(78+19) = 0,02 | **F1 score** = 2 · (P·R)/(P+R) = 3,8 · 10<sup>-4</sup>
 
 
 ## Example results
