@@ -47,7 +47,7 @@ Average tagging accuracy: **93.72%**
 * FPs: 1,306-7 = 1,299
 * FN: 4
 
-**Precision** = 3/(3+1,299) = 0,0023 | **Recall** = 3/(4+3) = 0,42 | **F1 score** = 2 · (P·R)/(P+R) = 46 · 10<sup>-4</sup>
+**Precision** = 3/(3+1,299) = 0,0023 | **Recall** = 3/(4+3) = 0,42 | **F1 score** = 2 · (P·R)/(P+R) = 4,57 · 10<sup>-3</sup>
 
 
 ### Summa contra Gentiles vs. De Deo Socratis    
@@ -76,9 +76,58 @@ No results.
 ### Summa contra Gentiles vs. Metaphysica
 
 * Total number of sentences (_ScG_ and _De Divinatione_ combined): 22,550
-* Total number of TRACER results: 
-* Total number of TRACER results without duplicates:
-* Reuses to find: 
+* Total number of TRACER results: 506,418
+* Total number of TRACER results without duplicates: 502,877
+* Reuses to find: 97
+* TPs: 19
+* FPs: 502,877-19 = 502,858
+* FN: 78
+
+
+**Precision** = 97/(97+502,858) = 0,000192 | **Recall** = 2/(78+19) = 0,02 | **F1 score** = 2 · (P·R)/(P+R) = 3.8 · 10<sup>-4</sup>
+
+
+## Example results
+
+### False Negatives
+
+<table>
+    <thead>
+        <tr>
+            <th>Work</th>
+            <th>Sentence</th>
+            <th>Details</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>ScG</td>
+            <td>hinc etiam processit stoicorum opinio , qui dicebant cognitionem intellectus causari ex hoc quod <b>imagines</b> <b>corporum</b> nostris <b>mentibus imprimuntur</b> , sicut speculum quoddam , vel sicut <b>pagina</b> recipit <b>litteras</b> impressas , absque hoc quod aliquid agat : ut boetius narrat in v de consolatione</td>
+            <td rowspan=2>in <code>.link</code>
+             (overlap of 6) but not in <code>.score</code> file</td>
+        </tr>
+        <tr>
+            <td>PC</td>
+            <td>Quondam Porticus attulit obscuros nimium senes , qui sensus et <b>imagines</b> e <b>corporibus</b> extimis credant <b>mentibus imprimi</b> , ut quondam celeri stilo mos est aequore <b>paginae</b> , quae nullas habeat notas , pressas figere <b>litteras</b> .</td>
+        </tr>
+    </tbody>
+</table>
+
+
+
+### True Positives
+
+
+<!-- **ScG (1.62.5)**: cum etiam deus sit primus intellectus et primum intelligibile , oportet quod veritas intellectus cuiuslibet eius veritate mensuretur : _si UNUMQUODQUE MENSURATUR PRIMO sui generis_ , ut philosophus tradit , in x metaphysicae .
+
+(= translation) 
+
+**Metaphysica (9.1.7-8.1052b24)**: Hinc autem et in aliis dicitur METRUM quo PRIMO UNUMQUODQUE cognoscitur . 
+
+(= translation)
+
+IT annotation: QL+QR | TRACER settings: | TRACER result: FN | Linking file: | Scoring file: | -->
+
 
 ## Copyright and Acknowledgements
 This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/) and was funded by the German Federal Ministry of Education and Research ([eTRAP](https://www.etrap.eu/), No. 01UG1409).
