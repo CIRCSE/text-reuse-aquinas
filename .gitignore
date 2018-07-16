@@ -41,18 +41,20 @@ corpus-lemlat/
 
 00-index-thomisticus/Treebank\.csts
 
-00-index-thomisticus/\.~lock\.ITTB-SCG-clean\.txt#
-
-00-index-thomisticus/\.~lock\.ITTB-SCG-mod\.csv#
-
 01-corpus/downloaded/
 
 04-corpus-tracer/
 
-05-results/scg-deDeoSocratis/fd0\.9-overlap3-sim0\.4/
-
-05-results/scg-deDeoSocratis/fd0\.9-overlap5-sim0\.4/
-
 BabelNetExtract/
 
 03-corpus-treetagger-passarotti/
+
+05-results/scg-deDivinatione\.zip
+
+05-results/scg-metaphysica\.zip
+
+05-results/scg-deDeoSocratis\.zip
+
+05-results/scg-deTrinitate\.zip
+
+05-results/scg-philosophiaeConsolationis\.zip
