@@ -87,7 +87,7 @@ No results.
 **Precision** = 97/(97+502,858) = 0,000192 | **Recall** = 2/(78+19) = 0,02 | **F1 score** = 2 · (P·R)/(P+R) = 3,8 · 10<sup>-4</sup>
 
 
-## Example results
+<!--## Example results
 
 ### False Negatives
 
@@ -114,11 +114,34 @@ No results.
 </table>
 
 
+<table>
+    <thead>
+        <tr>
+            <th>Work</th>
+            <th>Sentence</th>
+            <th>Details</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>ScG</td>
+            <td>quia vero non omnis veritatis manifestandae modus est idem ; disciplinati autem hominis est tantum de unoquoque fidem capere tentare , quantum natura rei permittit , ut a philosopho , optime dictum boetius introducit , necesse est prius ostendere quis modus sit possibilis ad veritatem propositam menifestandam .</td>
+            <td rowspan=2>in <code>.link</code>
+             (overlap of 8) but not in <code>.score</code> file; missing syn relation (eruditus-disciplinatus); inconsistent lemmatisation (temptare-tentare)</td>
+        </tr>
+        <tr>
+            <td>De Trinitate</td>
+            <td>age igitur ingrediamur et unumquodque ut intellegi atque capi potest dispiciamus ; nam , sicut optime dictum uidetur , eruditi est hominis unum quodque ut ipsum est ita de eo fidem capere temptare .</td>
+        </tr>
+    </tbody>
+</table>
+
+
 
 ### True Positives
 
 
-<!-- **ScG (1.62.5)**: cum etiam deus sit primus intellectus et primum intelligibile , oportet quod veritas intellectus cuiuslibet eius veritate mensuretur : _si UNUMQUODQUE MENSURATUR PRIMO sui generis_ , ut philosophus tradit , in x metaphysicae .
+**ScG (1.62.5)**: cum etiam deus sit primus intellectus et primum intelligibile , oportet quod veritas intellectus cuiuslibet eius veritate mensuretur : _si UNUMQUODQUE MENSURATUR PRIMO sui generis_ , ut philosophus tradit , in x metaphysicae .
 
 (= translation) 
 
