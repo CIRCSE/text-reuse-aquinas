@@ -12,7 +12,8 @@ import os
 
 if __name__ == '__main__':
     
-    tracer_results = path.abspath(path.join(__file__ ,"../../../05-results/scg-deDeoSocratis/fd0.9-overlap3-sim0.2/tagged-tagged.score.expanded.csv"))
+    #tracer_results = path.abspath(path.join(__file__ ,"../../../05-results/scg-deDeoSocratis/fd0.9-overlap3-sim0.2/tagged-tagged.score.expanded.csv"))
+    tracer_results = path.abspath(path.join(__file__ ,"../../../00-index-thomisticus/scripts/tagged-tagged.score.expanded.csv"))
     
     tracer_results_file = open(r""+ tracer_results)
     #tracer_results_file = open(r"results-tracer-all.expanded.txt")
@@ -22,7 +23,7 @@ if __name__ == '__main__':
     #out = open(output_file, 'w')      
     
     
-    out = open("scg-deDeoSocratis_results-tracer-all.expanded_w_o_dupl.txt", 'w') 
+    out = open("tagged-tagged.score.expanded_w_o_dupl.txt", 'w') 
         
     
     id_dict = {}
