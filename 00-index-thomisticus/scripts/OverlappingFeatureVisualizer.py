@@ -20,24 +20,28 @@ def get_joined_features(array1, array2):
     
 if __name__ == '__main__':
     
-    #### change these paths or chage the names of the sel, link and feats files. make sure you store all files in the same directory as where this script is in #### 
+    #### change these paths or change the names of the sel, link and feats files. make sure you store all files in the same directory as where this script is in #### 
     #################################################################
     
     feature_file = open(r"tagged.feats")
     selection_file = open(r"tagged.sel")
     linking_file = open(r"tagged-tagged.link")
+    text_file = open(r"tagged.txt")
     #feature_file = open(r"test.feats")
     #selection_file = open(r"test.sel")
     #linking_file = open(r"test.link")
+    #text_file = open(r"test.link")
     feature_data = feature_file.read().splitlines() 
     selection_data = selection_file.read().splitlines() 
     linking_data = linking_file.read().splitlines() 
+    text_data = text_file.read().splitlines()
     
     out = open(feature_file.name[:-6] + ".viz.txt",'w')
     
     #################################################################
     feat_dict = {}
     feats_in_sentences = {}
+    sentences = {}
     
     
     # 1st, let's just save the feature next to its ID in a dictionary (FID is key)
@@ -46,8 +50,14 @@ if __name__ == '__main__':
         FID = line_arr[0]
         feature = line_arr[1]
         feat_dict[FID] = feature
-    
     print "Feature list read."
+    
+    for line in text_data: 
+        line_arr = line.split("\t")
+        SID = line_arr[0]
+        sentences[SID] = line_arr[1]
+    print "Sentences read."   
+    
     
     # 2nd, lets' save all feature IDs next to sentence IDs (SIDs are keys)
     for line in selection_data:
@@ -59,7 +69,6 @@ if __name__ == '__main__':
             new_array = feats_in_sentences[SID] 
         new_array.append(FID)
         feats_in_sentences[SID] = new_array
-    
     print "Saved features to sentences."   
     
     
@@ -78,7 +87,12 @@ if __name__ == '__main__':
                 for feature in join:
                     out.write(feat_dict[feature] + " ")
                     print feat_dict[feature] + " ",
-                out.write("\t" + line_arr[2] + "\n")
+                out.write("\t" + line_arr[2] + "\t" )
+                try:
+                    out.write(sentences[SID1] + "\t" + sentences[SID2])
+                except:
+                    pass
+                out.write("\n")
                 print "\t" + line_arr[2]
         except:
             pass
