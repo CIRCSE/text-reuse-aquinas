@@ -56,3 +56,13 @@ BabelNetExtract/
 05-results/scg-philosophiaeConsolationis\.zip
 
 05-results/scg-DeTrinitate\.zip
+
+07-tracer/2017-tracer/
+
+07-tracer/2018-tracer-TreeTaggerLemmatiserImpl/
+
+.DS_Store
+
+01-corpus/.DS_Store
+
+07-tracer/.DS_Store
