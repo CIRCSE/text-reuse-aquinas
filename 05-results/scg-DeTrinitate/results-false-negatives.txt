@@ -1,0 +1,12 @@
+Linking minOverlap: 5 | Containment measure similarity score: 0.4 | Selection Feature density: 0.9 
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+ 
+ 
+3000025 age igitur ingrediamur et unumquodque ut intellegi atque capi potest dispiciamus ; nam , sicut optime dictum uidetur , eruditi est hominis unum quodque ut ipsum est ita de eo fidem capere temptare . 
+ 
+1000043 quia vero non omnis veritatis manifestandae modus est idem ; disciplinati autem hominis est tantum de unoquoque fidem capere tentare , quantum natura rei permittit , ut a philosopho , optime dictum boetius introducit , necesse est prius ostendere quis modus sit possibilis ad veritatem propositam manifestandam . 
+ 
+ 
+In .link file:
+In .score file: 
+REASON: 
